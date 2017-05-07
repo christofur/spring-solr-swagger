@@ -1,4 +1,4 @@
-# spring-solr-health
+# spring-solr-swagger
 Exploring public health datasets with Spring and Solr
 .
 
