@@ -1,13 +1,14 @@
 package co.linular.persistence.model.impl;
 
 import co.linular.persistence.model.IEntity;
+import co.linular.persistence.model.IIdEntity;
 import co.linular.persistence.model.SearchableCostDefinition;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.solr.core.mapping.Indexed;
 import org.springframework.data.solr.core.mapping.SolrDocument;
 
 @SolrDocument(solrCoreName = "govdata2")
-public class Cost implements IEntity, SearchableCostDefinition {
+public class Cost implements IIdEntity, SearchableCostDefinition {
 
     private @Id @Indexed long id;
     private @Indexed String Quarter;
